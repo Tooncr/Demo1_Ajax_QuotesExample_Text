@@ -18,7 +18,7 @@ public class ManageQuoteServlet extends HttpServlet {
     }
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        response.getWriter().write(quoteRepository.getRandomQuote());
+        response.getWriter().write(quoteRepository.getRandomQuote().getText());
     }
 
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
